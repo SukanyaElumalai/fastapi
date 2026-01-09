@@ -1,8 +1,11 @@
 # Fastapi
-FastAPI Project
-This project aims to perform CRUD(Create, Read, Update, Delete) operations to update Inventory products.
 
-# 🚀 Key Features: Manage product entries, updates, and deletions.
+FastAPI Project
+
+This application aims to perform CRUD(Create, Read, Update, Delete) operations to update Inventory products.
+
+# 🚀 Key Features: Manage product entries, updates, and deletions
+
 CORS Enabled: Pre-configured to communicate with frontend frameworks (default: http://localhost:3000).
 
 Dependency Injection: Utilizes FastAPI’s Depends for efficient and thread-safe database session management.
@@ -26,17 +29,29 @@ Step 2: Activate Virtual EnvironmentUse the pre-configured environment in  proje
 .\myenv\Scripts\Activate.ps1
 
 Step 3: Install Dependencies:
-pip install fastapi uvicorn sqlalchemy pydantic psycopg2-binary
+
+pip install fastapi uvicorn sqlalchemy pydantic
+
 Step 4: Launch the Backend
+
 uvicorn main:app --reload
+
 The server will start at http://127.0.0.1:8000
-Step 5: Launch the FrontendIn a new terminal:
+
+Step 5: Launch the Frontend in new terminal:
 cd frontend
 npm install
 npm start
+
 # 📡 API DocumentationTest your endpoints directly through the browser:
+
 Interactive Swagger UI: http://127.0.0.1:8000/docs
+
 GET /products - Retrieve all inventory items.
+
 POST /products - Add a new product.
+
 PUT /products/{id} - Update existing product details.
+
 DELETE /products/{id} - Remove an item from inventory.
+
