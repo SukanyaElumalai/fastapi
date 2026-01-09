@@ -4,18 +4,27 @@ This project aims to perform CRUD(Create, Read, Update, Delete) operations to up
 
 # 🚀 Key Features: Manage product entries, updates, and deletions.
 CORS Enabled: Pre-configured to communicate with frontend frameworks (default: http://localhost:3000).
+
 Dependency Injection: Utilizes FastAPI’s Depends for efficient and thread-safe database session management.
+
 Auto-Documentation: Instant access to interactive API testing via Swagger UI.
 
 # 🛠️ Tech Stack:
 # 📥 Installation & SetupPrerequisitesIDE: 
 IntelliJ IDEA (with Python plugin) or VS Code.
+
 Database: PgAdmin 4 and a running PostgreSQL instance.
+
 Environment: Python 3.10+.
+
 Step 1: Clone & NavigateBashgit clone https://github.com/XXXXXX/fastapi.git
+
 cd fastapi
+
 Step 2: Activate Virtual EnvironmentUse the pre-configured environment in  project folder:
+
 .\myenv\Scripts\Activate.ps1
+
 Step 3: Install Dependencies:
 pip install fastapi uvicorn sqlalchemy pydantic psycopg2-binary
 Step 4: Launch the Backend
