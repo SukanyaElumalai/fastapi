@@ -1,46 +1,32 @@
 # Fastapi
 FastAPI Project
 This project aims to perform CRUD(Create, Read, Update, Delete) operations to update Inventory products.
-🚀 Features
-CRUD Operations: Performs managing products.
+🚀 Key Features: Manage product entries, updates, and deletions.
+CORS Enabled: Pre-configured to communicate with frontend frameworks (default: http://localhost:3000).
+Dependency Injection: Utilizes FastAPI’s Depends for efficient and thread-safe database session management.
+Auto-Documentation: Instant access to interactive API testing via Swagger UI.
 
-CORS Enabled: Configured for local development with frontend frameworks (default: localhost:3000).
-
-Dependency Injection: Uses FastAPI Depends for database session management.
-
-🛠️ Tech Stack
-Framework: FastAPI
-
-ORM: SQLAlchemy
-
-Pydantic: For data validation and serialization.
-
-Database: PostgreSQL
-
-📥 Installation & Setup
-
-Prerequisties:
-IDE : IntelliJ
-Python Interpreter
-PgAdmin to view database changes
-
-Clone the repository:
-git clone fastapi
+🛠️ Tech StackComponentTechnologyFrameworkFastAPIORMSQLAlchemyValidationPydanticDatabasePostgreSQLUI Management
+PgAdmin📥 Installation & SetupPrerequisitesIDE: 
+IntelliJ IDEA (with Python plugin) or VS Code.
+Database: PgAdmin 4 and a running PostgreSQL instance.
+Environment: Python 3.10+.
+Step 1: Clone & NavigateBashgit clone https://github.com/XXXXXX/fastapi.git
 cd fastapi
-
+Step 2: Activate Virtual EnvironmentUse the pre-configured environment in  project folder:
 .\myenv\Scripts\Activate.ps1
-This creates your virtual environment to run the application
-
-pip install fastapi uvicorn sqlalchemy pydantic
-
+Step 3: Install Dependencies:
+pip install fastapi uvicorn sqlalchemy pydantic psycopg2-binary
+Step 4: Launch the Backend
 uvicorn main:app --reload
-
-To run frontend:
+The server will start at http://127.0.0.1:8000
+Step 5: Launch the FrontendIn a new terminal:
 cd frontend
+npm install
 npm start
-
-📡 API Endpoints
-
-Check the endpoints using SwaggerUI:
-
-Swagger UI: http://127.0.0.1:8000/docs
+📡 API DocumentationTest your endpoints directly through the browser:
+Interactive Swagger UI: http://127.0.0.1:8000/docs
+GET /products - Retrieve all inventory items.
+POST /products - Add a new product.
+PUT /products/{id} - Update existing product details.
+DELETE /products/{id} - Remove an item from inventory.
