@@ -20,7 +20,9 @@ Database: PgAdmin 4 and a running PostgreSQL instance.
 
 Environment: Python 3.10+.
 
-Step 1: Clone & NavigateBashgit clone https://github.com/XXXXXX/fastapi.git
+Step 1: Clone & Navigate
+
+git clone https://github.com/XXXXXX/fastapi.git
 
 cd fastapi
 
