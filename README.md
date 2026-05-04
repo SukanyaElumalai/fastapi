@@ -22,7 +22,7 @@ Environment: Python 3.10+.
 
 Step 1: Clone & Navigate
 
-git clone [https://github.com/XXXXXX/fastapi.git](https://github.com/SukanyaElumalai/fastapi.git)
+git clone [https://github.com/SukanyaElumalai/fastapi.git](https://github.com/SukanyaElumalai/fastapi.git)
 
 cd fastapi
 
